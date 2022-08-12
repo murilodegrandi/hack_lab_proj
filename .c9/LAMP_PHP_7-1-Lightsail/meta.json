@@ -1,0 +1,5 @@
+{
+  "id": "LAMP_PHP_7-1-Lightsail",
+  "configuration": "file:///home/bitnami/htdocs/hack_lab_proj/.c9",
+  "name": "LAMP_PHP_7-1-Lightsail"
+}
