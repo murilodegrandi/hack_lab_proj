@@ -85,10 +85,10 @@
             if (isset($_POST['login']) && !empty($_POST['username']) 
                && !empty($_POST['password'])) {
 				  
-                   $user = "testapp";
-                   $pass = "Password1!";
+                   $user = "root";
+                   $pass = "fiaBdPJTV9mm";
                    $host = "localhost";
-                   $dbdb = "testdb";
+                   $dbdb = "appdb";
     
                    $con = mysqli_connect($host, $user, $pass, $dbdb);   
 
