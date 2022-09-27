@@ -17,9 +17,10 @@
    </head>
 	
    <body>
-      
-      <h1>Armoured DevSec APP</h1>
-      <h2>Please Sign-in</h2>
+      <header>
+         <h1>Armoured DevSec APP</h1>
+         <h2>Please Sign-in</h2>
+      </header>
       <div class = "container form-signin">
          
          <?php

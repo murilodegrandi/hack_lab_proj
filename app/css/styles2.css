@@ -6,42 +6,32 @@
 }
 body {
     background-image: url("https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?cs=srgb&dl=pexels-manuel-geissinger-325229.jpg&fm=jpg&w=1920&h=672");
-    background-position: 50% 0%;
-    
+    background-position: 60% 20%;
+    background-repeat: no-repeat;
+    margin: auto;
 }
 
+header {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: grey;
+}
 
-.home h1{
-    position:relative;
-    margin-left:500px;
+button {
+    display:block;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
     color:grey;
+    padding:20px 20px 20px 20px;
 }
 
-.home h2{
-    position:relative;
-    margin-left:550px;
-    color:silver;
-}
-
-.home h3{
-    position:relative;
-    margin-top:130px;
-    margin-left:450px;
-    color:silver;
-}
-
-.home button{
-    position:relative;
-    margin-top:50px;
-    margin-left:700px;
-    color:grey;
-    padding:10px 10px 10px 10px;
-}
-
-.home p{
-    position:relative;
-    margin-top:150px;
-    margin-left:620px;
-    color:silver;
+a {
+    display:block;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    color: silver;
 }
 
