@@ -19,7 +19,7 @@
    <body>
       
       <h1>Armoured DevSec APP</h1>
-      <h2>Please Log-in</h2>
+      <h2>Please Sign-in</h2>
       <div class = "container form-signin">
          
          <?php

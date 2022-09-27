@@ -6,7 +6,7 @@
 }
 body {
     background-image: url("https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?cs=srgb&dl=pexels-manuel-geissinger-325229.jpg&fm=jpg&w=1920&h=672");
-    background-position: 30% 30%;
+    background-position: 20% 20%;
     
 }
 h1{
@@ -20,7 +20,7 @@ h2 {
     color: grey;
     font-style: arial;
     font-size: 20pt;
-    padding-left:650px;
+    padding-left:700px;
     
 }
 input {
