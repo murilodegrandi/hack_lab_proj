@@ -17,7 +17,7 @@ if (!(isset($_SESSION['username']) && $_SESSION['username'] != '')) {
 </head>
 <body>
     <header>
-        <h1>Check Connectivity</h1>
+        <h1>Reachability Check</h1>
     </header>
     <form method="post" action="exec.php">  
       Target*: <input type="text" name="target" value="127.0.0.1">
