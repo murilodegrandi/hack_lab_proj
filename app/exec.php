@@ -27,12 +27,9 @@ if (!(isset($_SESSION['username']) && $_SESSION['username'] != '')) {
 
     <div class="results">
 
-
-<!-- Test *TARGET field for OS Command Exec by sending "127.0.0.1;../../../../../../etc/passwd -->
-<!-- Test *TARGET field for Reflected XXS by sending <script>alert("Vulnerable to XSS!");</script> -->
-
-<!-- Challenge: Fix OS Command Execution + Reflected Cross Site Scripting (XSS) issues on the piece of code below. -->
-
+<!-- Challenge 5: Remediate OS Command Execution and Reflected Cross Site Scripting (XSS) flaws by implementing input validation on 
+the piece of code between START-END -->
+<!-- START -->
 <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<h2>Your Results for " . $_POST["target"] . "</h2>";
@@ -43,7 +40,7 @@ if (!(isset($_SESSION['username']) && $_SESSION['username'] != '')) {
 
 ?>
 
-<!-- Challenge: Fix OS Command Execution + Reflected Cross Site Scripting issues on the piece of code above. -->
+<!-- END -->
 
     </div>
     <a href = "index.php">Logout Session</a>

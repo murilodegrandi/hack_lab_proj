@@ -1,0 +1,5 @@
+Challenge #4: Remediate SQL Injection
+Objective: Fix the flaw that is enabling SQL Injection in the login form. Then, confirm that it has been fixed by running ZAP and manually testing with injection.
+Location: index.php
+Reference: https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+

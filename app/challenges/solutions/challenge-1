@@ -1,0 +1,9 @@
+Challenge #1: Bypass authentication via SQL Injection
+Objective: Find a SQL injection vulnerable input field and attack to access the restricted area (home.php) of the application . 
+Flaw Location: index.php
+Reference: https://owasp.org/www-community/attacks/SQL_Injection
+
+Solution:
+
+Username: anything
+Password: 'OR'1'='1

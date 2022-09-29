@@ -1,0 +1,4 @@
+Challenge #2: Test for Reflected Cross-site Scripting
+Objective: Test the *Target field for Reflected Cross-site Scripting(XSS) by making a pop-up window appear with the word "HACKED".
+Flaw Location: exec.php
+Reference: https://owasp.org/www-prSoject-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting.html

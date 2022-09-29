@@ -1,0 +1,5 @@
+Challenge #5: Remediate both Command Injection and Reflected Cross-site Scripting (XXS).
+Objective: Prevent a user to input arbitrary code in the vulnerable form by implementing input validation. Confirm that it has been fixed by running ZAP and 
+testings with different injections. Make sure that the application still works by testing a ping to google.com.
+Location: exec.php
+Reference: https://www.w3schools.com/php/php_form_validation.asp
