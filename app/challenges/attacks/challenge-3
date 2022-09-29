@@ -1,5 +1,5 @@
 Challenge #3: Test for OS Command Injection.
-Objective: Access the system users (shadow file)  of the server via OS Command Injection.
+Objective: Access the system users (passwd file) of the server via OS Command Injection.
 Flaw Location: exec.php
 Reference: https://owasp.org/www-community/attacks/Command_Injection
 
