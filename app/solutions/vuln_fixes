@@ -20,22 +20,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 By:
 
-function validate_input($data) {
-  	$result = "127.0.0.1";
-  	if (filter_var($data, FILTER_VALIDATE_IP)) {
-  		return $data;
-	} else {
-  		return $result;
-	} 
-  
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $target = test_input($_POST["target"]);
+            echo "<h2>Your Results for " . $target . "</h2>";
+            $output = shell_exec('ping -c 3 ' . $target);  
+            echo "<pre>$output</pre>";
+            echo "<br><br>";
+            $str = "This is some <b>bold</b> text.";
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
- $ping_host = validate_input($_POST["target"]);  	
- echo "<h2>Your Results for " . $ping_host . "</h2>";
- $output = shell_exec('ping -c 3 ' . $ping_host);  
- echo "<pre>$output</pre>";
- echo "<br><br>";
+        function test_input($data) {
+          $target = trim($data);
+          $target = stripslashes($data);
+          $target = htmlspecialchars($data);
+          $target = str_replace(";","",$target);
+          return $target;
 }
 
 
