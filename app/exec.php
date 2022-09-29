@@ -20,7 +20,7 @@ if (!(isset($_SESSION['username']) && $_SESSION['username'] != '')) {
         <h1>Reachability Check</h1>
     </header>
     <form method="post" action="exec.php">  
-      Target*: <input type="text" name="target" value="127.0.0.1">
+      Target*: <input type="text" name="target" placeholder="142.250.66.206 or google.com">
       <p><span class="error">* required field</span></p>
       <input type="submit" name="submit" value="Submit">  
     </form>
