@@ -35,15 +35,15 @@
                    $dbdb = "appdb";
     
                    $con = mysqli_connect($host, $user, $pass, $dbdb);   
+                   
+/* Challenge #4: Remediate SQL Injection flaw and implement prevention against brute-force attack by modifying the piece of code between START-END.
 
+START */
                $sql = "SELECT username, password, failedlogins FROM users WHERE username = '". $_POST['username'] ."' and password = '". $_POST['password'] ."';";
-               //echo $sql;
-               // SQL Injection "1' or 1=1; -- "
                $res = mysqli_query($con,$sql, MYSQLI_USE_RESULT);
                $row = mysqli_fetch_row($res);
                mysqli_close($con);
                if($row){
-      
                            $con2 = mysqli_connect($host, $user, $pass, $dbdb);  
                            $sql2 = "UPDATE users set failedlogins = 0  WHERE username = '". $row[0] ."';";
                            $res2 = mysqli_query($con2,$sql2);   
@@ -52,13 +52,13 @@
                            $_SESSION['timeout'] = time();
                            $_SESSION['username'] = $row[0];  
                            header('Refresh: 0; URL = home.php');
-                        
-                     }else{
-                        $msg = 'Wrong username or password';
-                     }
+               }else{
+                  $msg = 'Wrong username or password';
+               }
             }
+   // END
          ?>
-      </div> <!-- /container -->
+      </div> 
       
       <div class = "container">
       
