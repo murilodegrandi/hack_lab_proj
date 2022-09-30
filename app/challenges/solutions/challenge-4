@@ -39,7 +39,8 @@ By:
                if($row){
                         mysqli_close($con);
                         if ($_POST['username'] == $row[0] && 
-                           $_POST['password'] == $row[1]) 
+                           $_POST['password'] == $row[1] && 
+                           $row[2] < 3)
                         {
                            $con2 = mysqli_connect($host, $user, $pass, $dbdb);  
                            $sql2 = "UPDATE users set failedlogins = 0  WHERE username = '". $row[0] ."';";
