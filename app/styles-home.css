@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+    background-image: url("https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?cs=srgb&dl=pexels-manuel-geissinger-325229.jpg&fm=jpg&w=1920&h=672");
+    background-position: 60% 20%;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+header {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: grey;
+}
+
+button {
+    display:block;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    color:grey;
+    padding:20px 20px 20px 20px;
+}
+
+a {
+    display:block;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    color: silver;
+}
+

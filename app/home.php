@@ -13,7 +13,7 @@ if (!(isset($_SESSION['username']) && $_SESSION['username'] != '')) {
 <html>
     <head>
       <title>Armoured DevSec APP</title>
-      <link href = "css/styles2.css" rel = "stylesheet">
+      <link href = "styles-home.css" rel = "stylesheet">
    </head>
 <body>
     
