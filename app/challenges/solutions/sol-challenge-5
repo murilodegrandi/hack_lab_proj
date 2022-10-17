@@ -7,14 +7,17 @@ Reference: https://www.w3schools.com/php/php_form_validation.asp
 Solution:
 In exec.php, replace:
 
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<h2>Your Results for " . $_POST["target"] . "</h2>";
         $output = shell_exec('ping -c 3 ' . $_POST["target"]);  
         echo "<pre>$output</pre>";
         echo "<br><br>";
+?>
 
 By:
 
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $target = validate_input($_POST["target"]);
             echo "<h2>Your Results for " . $target . "</h2>";
@@ -30,3 +33,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $target = str_replace(";","",$target);
           return $target;
 }
+<?php
